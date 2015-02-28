@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>NIT Library | Welcome to Library of NIT Raipur</title>
+<link href="files/bootstrap.min.css" rel="stylesheet">
+   <script src="files/jquery.min.js"></script>
+   <script src="files/bootstrap.min.js"></script>
+<style>
+nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:300px;
+    width:80px;
+    float:left;
+    padding:5px;	      
+}
+section {
+    width:350px;
+    float:left;
+    padding:10px;	 	 
+}
+
+form {
+    width: 500px;
+    margin: 0 auto;
+}
+.searchtext {
+                width:300px;
+                margin:0 auto;
+}
+.searchbutton{
+	width:100px;
+	height:40px;
+}
+</style>
+</head>
+
+<body>
+<h3 align="center">Search Book by-</h3>
+<div id="radiosearch" align="center">
+<input type="radio" name="radiosearch" onclick="document.getElementById('searchbox').action='http://www.google.com/search?q=';" checked="checked"/> Book's Name
+<input type="radio" name="radiosearch" onclick="document.getElementById('searchbox').action='http://images.google.com/images?q=';"/>Author's Name
+<input type="radio" name="radiosearch" onclick="document.getElementById('searchbox').action='http://maps.google.com/maps?hl=en&amp;tab=wl?q=';"/>Publisher's Name
+</div>
+<br><br>
+<p align ="center">
+ <form method="get" id ="searchbox" action=""/>
+ <input type="text" name="q" size="30" placeholder="Start typing to search..." class="searchtext" maxlength="200"/><br>
+ <input type="image" value="Search" class="searchbutton" src="images/search.png"/> 
+<br/>
+</p>
+<br><br><br><hr>
+<nav>
+<p align="center">
+<button type="button" class="btn btn-info"><a href="students.html">New Student Entry</a></button>
+<p/>
+<br><br>
+<p align="center">
+<button type="button" class="btn btn-info"><a href="faculty.html">New Faculty Entry</button>
+</p>
+<br><br>
+<p align="center">
+<button type="button" class="btn btn-danger">Books with their deadlines</button>
+</p>
+<br><br>
+<p align="center">
+<button type="button" class="btn btn-success">New Arrivals</button>
+</p>
+</nav>
+
+<section>
+
+</section>
+
+</body>
+</html>
